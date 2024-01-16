@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	
+    <bean id="studentList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <bean class="com.Task.Student">
+                    <property name="id" value="1"/>
+                    <property name="fname" value="Dilip"/>
+                    <property name="lname" value="Dabhi"/>
+                    <property name="email" value="dilip@gmail.com"/>
+                    <property name="mobile" value="1234567890"/>
+                </bean>
+                <bean class="com.Task.Student">
+                    <property name="id" value="2"/>
+                    <property name="fname" value="Bharat"/>
+                    <property name="lname" value="Dabhi"/>
+                    <property name="email" value="bharat@gmail.com"/>
+                    <property name="mobile" value="9090909090"/>
+                </bean>
+                <bean class="com.Task.Student">
+                    <property name="id" value="3"/>
+                    <property name="fname" value="Aniket"/>
+                    <property name="lname" value="Bapu"/>
+                    <property name="email" value="aniket@gmail.com"/>
+                    <property name="mobile" value="9898989898"/>
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>
